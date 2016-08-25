@@ -440,8 +440,8 @@ NSString *RLHighlightedBackgroundCornerRadius = @"HighlightedBackgroundCornerRad
 		if (numberOfLines == approximateNumberOfLines - 1) break;
 		index = NSMaxRange(lineRange);
 	}
-	NSRange rangeOfText = NSMakeRange(lineRange.location + lineRange.length - 1,
-									  self.textStorage.length - lineRange.location - lineRange.length + 1);
+	NSRange rangeOfText = NSMakeRange(lineRange.location + lineRange.length - 3,
+                                      self.textStorage.length - lineRange.location - lineRange.length + 3);
 	return rangeOfText;
 }
 
